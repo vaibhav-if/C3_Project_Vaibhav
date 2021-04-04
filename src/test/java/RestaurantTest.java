@@ -62,6 +62,7 @@ class RestaurantTest {
         assertThrows(itemNotFoundException.class,
                 ()->restaurant.removeFromMenu("French fries"));
     }
+    // Part 3: Adding a Feature using TDD
     @Test
     public void selected_items_passed_should_return_correct_total_cost() {
         int totalCost = restaurant.orderTotat("Sweet corn soup", "Vegetable lasagne");
